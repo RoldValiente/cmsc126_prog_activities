@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Tax Computation.css">
+    <title>Philippine Income Tax Calculator</title>
+</head>
+<body>
+    <center>
+        <h1>Philippine Income Tax Calculator</h1>
+            Made by Harold Clyde Valiente
+        <br>
+        <p>
+            This program computes the annual income tax payable of earning Filipino individual and business organizations. <br>
+            It asks for your monthly income, number of dependents, and the type of worker you are (government or private).<br>
+            After entering the necessary information correctly, it will calculate and display your annual income tax payable. 
+        </p>
+    </center>
+
+    <br>
+    
+    <div class="square">
+        <form>
+            <label for="salary">How much is your monthly income (in Php)?</label><br>
+            <input id="salary">
+            <br>
+            <br>
+            <label for="dependents">How many dependents do you have (e.g. Old parents & Children below 21 yrs old)?</label><br>
+            <input id="dependents">
+            <br>
+            <br>
+            <label for="worker_type">Are you a Government Worker? Answer either Yes or No.</label><br>
+            <input id="worker_type">
+            <br>
+            <br>
+        </form>
+
+        <button type="submit" onclick="main()"> Compute Tax </button>
+    
+        <h2>Income Tax Payable: </h2><h1 id="result"></h1>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    It calculates your net taxable income by subtracting your total insurance deductions and personal exemptions (along some additionals) 
+    to your gross annual income.  
+    <br>
+    The income tax payable was computed according to the table 
+    <a href="https://assets.rappler.co/612F469A6EA84F6BAE882D2B94A4B421/img/ABB83A969F6C4A63BD7A5AE957DAF456/personal-income-tax-20180112-01-1.jpg"  target="_blank">here</a>.
+
+    <script src="Tax Computation.js"></script>
+</body>
+</html>
