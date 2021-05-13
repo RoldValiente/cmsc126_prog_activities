@@ -4,8 +4,7 @@ body{
     font-family: 'Segoe UI';
 }
 
-div.square
-{
+div.square{
     display: block;
     height: 500px;
     width: 500px;
